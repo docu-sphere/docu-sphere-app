@@ -1,0 +1,44 @@
+@use '@angular/material' as mat;
+@import "../../scss/material/colors";
+
+@import "bootstrap-scss/functions";
+
+$prefix: "ef-ds-";
+
+$enable-dark-mode: false;
+$primary: mat.m2-get-color-from-palette($md-primary, 500);
+$secondary: mat.m2-get-color-from-palette($md-secondary, 500);
+$success: mat.m2-get-color-from-palette($md-success, 500);
+$info: mat.m2-get-color-from-palette($md-info, 500);
+$warning: mat.m2-get-color-from-palette($md-warning, 500);
+$danger: mat.m2-get-color-from-palette($md-danger, 500);
+
+$transition-link: color .2s ease;
+
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $info,
+        "warning": $warning,
+        "danger": $danger
+);
+
+@import "bootstrap-scss/variables";
+@import "bootstrap-scss/maps";
+@import "bootstrap-scss/mixins";
+@import "bootstrap-scss/root";
+@import "bootstrap-scss/reboot";
+@import "bootstrap-scss/containers";
+@import "bootstrap-scss/grid";
+@import "bootstrap-scss/utilities";
+$utilities: map-merge(
+                $utilities,
+                (
+                        "opacity": null
+                )
+);
+@import "bootstrap-scss/utilities/api";
+@import "bootstrap-scss/alert";
+@import "bootstrap-scss/badge";
+@import "bootstrap-scss/helpers";
