@@ -1,0 +1,32 @@
+<div class="title" mat-dialog-title>
+    <mat-form-field class="w-100" subscriptSizing="dynamic">
+        <mat-label>Search</mat-label>
+        <input type="text" matInput id="search" name="search">
+    </mat-form-field>
+</div>
+<mat-dialog-content>
+    <ul class="d-flex flex-column ref-search-results custom-scroll">
+        <li>
+            <a class="item">
+                <div>
+                    <mat-icon>search</mat-icon>
+                </div>
+                <div class="d-flex flex-column w-100">
+                    <div class="d-flex flex-row">
+                        <div class="flex-grow-1">Text</div>
+                        <div>
+                            <span class="sidebar-heading-type">POST</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-sm text-truncate">Description</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</mat-dialog-content>
+<div class="ref-search-meta">
+    <span>↑↓ Navigate</span>
+    <span>⏎ Select</span>
+</div>

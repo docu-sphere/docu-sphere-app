@@ -1,0 +1,52 @@
+.mat-mdc-dialog-content {
+    padding: 0 12px;
+}
+
+.title {
+    padding: 0 12px;
+}
+
+.ref-search-meta {
+    background: #e7e7e7;
+    padding: 6px 12px;
+    font-size: 13px;
+    color: #8e8e8e;
+    font-weight: 500;
+    display: flex;
+    gap: 12px;
+}
+
+.ref-search-results {
+    padding: 12px 0;
+    list-style: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration-line: none;
+    background-color: #f6f6f6;
+    border-radius: 3px;
+    padding: 6px 12px;
+    gap: 10px;
+
+    .sidebar-heading-type {
+        overflow: hidden;
+        flex-shrink: 0;
+        color: green;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 600;
+        text-align: right;
+        position: relative;
+        white-space: nowrap;
+    }
+}
+
+.custom-scroll {
+    overflow-y: auto;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+}

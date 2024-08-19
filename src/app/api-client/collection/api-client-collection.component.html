@@ -1,0 +1,24 @@
+<div class="d-flex flex-column">
+    @if (create) {
+        <div>
+            <form [formGroup]="formGroup">
+                <mat-form-field class="w-100 mb-1 small-form-field">
+                    <mat-label>New Collection Name</mat-label>
+                    <input formControlName="collectionName" type="text" matInput (keyup.enter)="onSaveNewCollection()"
+                           focus>
+                    <button matSuffix mat-button color="primary" (click)="onSaveNewCollection()"
+                            [disabled]="formGroup.invalid || formGroup.disabled">Save
+                    </button>
+                    @if (formGroup.controls.collectionName.invalid) {
+                        <mat-error>Value is required</mat-error>
+                    }
+                </mat-form-field>
+            </form>
+        </div>
+    }
+    <span>No collection found.</span>
+    <div>
+        <a href="" (click)="onCreateCollection($event)">Create</a> or
+        <a href="" (click)="openCollection.emit()">Open</a> collection
+    </div>
+</div>

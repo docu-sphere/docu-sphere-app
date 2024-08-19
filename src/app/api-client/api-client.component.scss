@@ -1,0 +1,11 @@
+:host {
+    min-height: 100dvh;
+    min-width: 100%;
+    max-width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-rows: 50px repeat(2, auto);
+    grid-template-columns: 280px 1fr;
+    grid-template-areas:
+        "navigation client";
+}

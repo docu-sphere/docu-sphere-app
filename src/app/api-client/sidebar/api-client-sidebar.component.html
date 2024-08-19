@@ -1,0 +1,18 @@
+<aside class="references-navigation">
+    <div class="sidebar">
+        <span class="fw-bolder fs-3">Docu Sphere</span>
+        <div class="search">
+            <mat-form-field class="w-100 mb-1 small-form-field">
+                <mat-icon matPrefix>search</mat-icon>
+                <mat-label>Search</mat-label>
+                <input type="text" matInput id="search" name="search" (click)="openSearch.emit()">
+                <span matSuffix class="sidebar-search-key">⌃K</span>
+            </mat-form-field>
+        </div>
+        <docu-sphere-api-client-collection
+            (createCollection)="createCollection.emit($event)"
+            (openCollection)="openCollection.emit()">
+        </docu-sphere-api-client-collection>
+        <docu-sphere-dark-mode-switcher></docu-sphere-dark-mode-switcher>
+    </div>
+</aside>
